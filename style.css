@@ -255,14 +255,13 @@ h1 {
   margin-bottom: 1.5rem;
   position: relative;
   z-index: 1;
-
-  /* Highlight first paragraph */
-  &:first-child {
-    font-size: 1.2em;
-    font-weight: 600;
-    padding-left: 1rem;
-    border-left: 4px solid var(--text-color);
-  }
+}
+/* Highlight first paragraph */
+.text-container p:first-child {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-left: 1rem;
+  border-left: 4px solid var(--text-color);
 }
 
 /* Hover effects */
@@ -419,7 +418,7 @@ a:focus {
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.projekt-video video {
+.projekt-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
